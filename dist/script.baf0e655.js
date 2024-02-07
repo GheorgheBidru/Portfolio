@@ -5481,13 +5481,22 @@ ScrollReveal({
   delay: 200
 });
 ScrollReveal().reveal(".home-content, .heading", {
-  origin: 'bottom'
+  origin: "bottom"
 });
 ScrollReveal().reveal(".home-img, .services-container, h3, .portofolio-box, .contact, .heading", {
-  origin: 'top'
+  origin: "top"
 });
 ScrollReveal().reveal(".home-content h1, footer, .about-img", {
-  origin: 'left'
+  origin: "left"
+});
+
+// typed js
+var typed = new Typed(".multiple-text", {
+  strings: ["Frontent Developer", "Programmer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop: true
 });
 _axios.default.get("https://jsonplaceholder.typicode.com/todos/1").then(function (response) {
   return console.log(response.data);
@@ -5520,7 +5529,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51952" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53747" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

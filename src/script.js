@@ -49,11 +49,23 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, .heading", { origin: 'bottom' });
-ScrollReveal().reveal(".home-img, .services-container, h3, .portofolio-box, .contact, .heading", { origin: 'top' });
-ScrollReveal().reveal(".home-content h1, footer, .about-img", { origin: 'left' });
+ScrollReveal().reveal(".home-content, .heading", { origin: "bottom" });
+ScrollReveal().reveal(
+  ".home-img, .services-container, h3, .portofolio-box, .contact, .heading",
+  { origin: "top" }
+);
+ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+  origin: "left",
+});
 
-
+// typed js
+const typed = new Typed(".multiple-text", {
+  strings: ["Frontent Developer", "Programmer"],
+  typeSpeed: 100,
+  backSpeed: 100,
+  backDelay: 1000,
+  loop:true
+});
 
 axios
   .get("https://jsonplaceholder.typicode.com/todos/1")
