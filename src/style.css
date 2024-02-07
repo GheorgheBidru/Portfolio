@@ -38,7 +38,7 @@ body {
 ::-webkit-scrollbar-thumb {
   background-color: var(--second-bg-color);
   border-radius: 30px;
-  border: 3px solid var(--background-color);
+  border: 3px solid var(--bg-color);
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -627,6 +627,7 @@ input {
 
   .navbar.active {
     display: block;
+    border-radius: 3rem;
   }
 
   .navbar a {

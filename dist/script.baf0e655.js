@@ -5439,39 +5439,57 @@ var _axios = _interopRequireDefault(require("axios"));
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 // toggle icon navbar
 
-var menuIcon = document.querySelector('#menu-icon');
-var navbar = document.querySelector('.navbar');
+var menuIcon = document.querySelector("#menu-icon");
+var navbar = document.querySelector(".navbar");
 menuIcon.onclick = function () {
-  menuIcon.classList.toggle('bx-x');
-  navbar.classList.toggle('active');
+  menuIcon.classList.toggle("bx-x");
+  navbar.classList.toggle("active");
 };
 
 // scoll section active
-var sections = document.querySelectorAll('section');
-var navLinks = document.querySelectorAll('header nav a');
+var sections = document.querySelectorAll("section");
+var navLinks = document.querySelectorAll("header nav a");
 window.onscroll = function () {
   sections.forEach(function (sec) {
     var top = window.scrollY;
     var offset = sec.offsetTop - 150;
     var height = sec.offsetHeight;
-    var id = sec.getAttribute('id');
+    var id = sec.getAttribute("id");
     if (top >= offset && top < offset + height) {
       navLinks.forEach(function (links) {
-        links.classList.remove('active');
-        document.querySelector("header nav a[href*=".concat(id, "]")).classList.add('active');
+        links.classList.remove("active");
+        document.querySelector("header nav a[href*=".concat(id, "]")).classList.add("active");
       });
     }
   });
-  // scoll section active
-  var header = document.querySelector('header');
-  header.classList.toogle('sticky', window.scrollY > 100);
+  // sticky navbar
+  var header = document.querySelector("header");
+  header.classList.toogle("sticky", window.scrollY > 100);
 
   // remove toggle icon and navbar when click navbar link (scoll)
 
-  menuIcon.classList.remove('bx-x');
-  navbar.classList.remove('active');
+  menuIcon.classList.remove("bx-x");
+  navbar.classList.remove("active");
 };
-_axios.default.get('https://jsonplaceholder.typicode.com/todos/1').then(function (response) {
+
+// scroll reveal
+
+ScrollReveal({
+  reset: true,
+  distance: "80px",
+  duration: 1000,
+  delay: 200
+});
+ScrollReveal().reveal(".home-content, .heading", {
+  origin: 'bottom'
+});
+ScrollReveal().reveal(".home-img, .services-container, h3, .portofolio-box, .contact, .heading", {
+  origin: 'top'
+});
+ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+  origin: 'left'
+});
+_axios.default.get("https://jsonplaceholder.typicode.com/todos/1").then(function (response) {
   return console.log(response.data);
 });
 // axios.post();
@@ -5502,7 +5520,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "61245" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51952" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
