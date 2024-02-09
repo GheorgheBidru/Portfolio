@@ -5486,7 +5486,7 @@ ScrollReveal().reveal(".home-content, .heading", {
 ScrollReveal().reveal(".home-img, .services-container, .portofolio-box, .contact, .heading", {
   origin: "top"
 });
-ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+ScrollReveal().reveal(".home-content h1, p, footer, .about-img", {
   origin: "left"
 });
 
@@ -5529,7 +5529,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "53747" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "49980" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];

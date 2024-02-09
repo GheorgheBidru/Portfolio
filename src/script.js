@@ -54,7 +54,7 @@ ScrollReveal().reveal(
   ".home-img, .services-container, .portofolio-box, .contact, .heading",
   { origin: "top" }
 );
-ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+ScrollReveal().reveal(".home-content h1, p, footer, .about-img", {
   origin: "left",
 });
 
