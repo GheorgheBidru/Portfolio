@@ -49,12 +49,12 @@ ScrollReveal({
   delay: 200,
 });
 
-ScrollReveal().reveal(".home-content, p, .heading", { origin: "bottom" });
+ScrollReveal().reveal(".home-content, .footer-iconTop, p, .heading", { origin: "bottom" });
 ScrollReveal().reveal(
   ".home-img, .services-container, .portofolio-box, .contact, .heading",
   { origin: "top" }
 );
-ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+ScrollReveal().reveal(".home-content h1, .about-img", {
   origin: "left",
 });
 

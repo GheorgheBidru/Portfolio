@@ -5480,13 +5480,13 @@ ScrollReveal({
   duration: 1000,
   delay: 200
 });
-ScrollReveal().reveal(".home-content, p, .heading", {
+ScrollReveal().reveal(".home-content, .footer-iconTop, p, .heading", {
   origin: "bottom"
 });
 ScrollReveal().reveal(".home-img, .services-container, .portofolio-box, .contact, .heading", {
   origin: "top"
 });
-ScrollReveal().reveal(".home-content h1, footer, .about-img", {
+ScrollReveal().reveal(".home-content h1, .about-img", {
   origin: "left"
 });
 
@@ -5529,7 +5529,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55627" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "50046" + '/');
   ws.onmessage = function (event) {
     checkedAssets = {};
     assetsToAccept = [];
